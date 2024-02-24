@@ -3,8 +3,9 @@ const active_sheet = SpreadsheetApp.getActiveSheet();
 
 function SendToSheet() {
 
+  // 取得するデータに合わせて変数名とURLを変更する
   // 7：取得するデータのURLに記載して変数に格納　8:文字タイプの設定
-  let N225_response = UrlFetchApp.fetch("https://www.google.com/finance/quote/NI225:INDEXNIKKEI?sa=X&ved=2ahUKEwjvlKuO_sKEAxUGhq8BHXXSD4QQ3ecFegQILxAX");
+  let N225_response = UrlFetchApp.fetch("");
   let content = N225_response.getContentText("utf-8");
 
   // 文字データの取得　11行目ラストは文字データへの変換　12：HTMLデータの邪魔な部分をreplaceで変換
